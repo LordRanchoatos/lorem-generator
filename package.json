@@ -1,5 +1,5 @@
 {
-  "name": "lorem-gen",
+  "name": "fllex-lorem",
   "version": "1.1.0",
   "description": "A flexible Lorem Ipsum generator for developers - generate placeholder text by words, characters, paragraphs, or lists",
   "main": "index.js",
