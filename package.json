@@ -1,15 +1,41 @@
 {
   "name": "lorem-generator",
   "version": "1.0.0",
-  "description": "lorem (filler text) generator.",
-  "keywords": [
-    "lorem"
-  ],
-  "license": "ISC",
-  "author": "lord_ranchoatos",
-  "type": "commonjs",
+  "description": "A flexible Lorem Ipsum generator for developers - generate placeholder text by words, characters, paragraphs, or lists",
   "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "placeholder",
+    "text",
+    "generator",
+    "development",
+    "dummy-text",
+    "filler",
+    "content"
+  ],
+  "author": "Atolagbe David <atolagbedt@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/dev-lorem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/dev-lorem/issues"
+  },
+  "homepage": "https://github.com/yourusername/dev-lorem#readme",
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
