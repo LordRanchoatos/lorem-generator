@@ -1,0 +1,15 @@
+{
+  "name": "lorem-generator",
+  "version": "1.0.0",
+  "description": "lorem (filler text) generator.",
+  "keywords": [
+    "lorem"
+  ],
+  "license": "ISC",
+  "author": "lord_ranchoatos",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
