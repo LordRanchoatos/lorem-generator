@@ -1,6 +1,6 @@
 // index.d.ts - TypeScript definitions
 
-declare module 'dev-lorem' {
+declare module 'flex-lorem' {
   /**
    * Generate Lorem Ipsum text by word count
    * @param wordCount Number of words to generate (default: 10)
@@ -63,7 +63,7 @@ declare module 'dev-lorem' {
   export const l: typeof list;
 
   // Default export
-  const devLorem: {
+  const flexLorem: {
     words: typeof words;
     characters: typeof characters;
     paragraphs: typeof paragraphs;
@@ -76,5 +76,5 @@ declare module 'dev-lorem' {
     l: typeof list;
   };
 
-  export default devLorem;
+  export default flexLorem;
 }

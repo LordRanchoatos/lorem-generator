@@ -1,11 +1,11 @@
-# lorem-generator
+# flex-lorem
 
 A flexible Lorem Ipsum generator for developers. Generate placeholder text by words, characters, paragraphs, or lists with simple, intuitive functions.
 
 ## Installation
 
 ```bash
-npm install dev-lorem
+npm install flex-lorem
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install dev-lorem
 ### Basic Usage
 
 ```javascript
-const lorem = require('dev-lorem');
+const lorem = require('flex-lorem');
 
 // Generate 10 words (default)
 console.log(lorem.words());
@@ -31,9 +31,9 @@ console.log(lorem.characters(50));
 ### ES6 Imports
 
 ```javascript
-import lorem from 'dev-lorem';
+import lorem from 'flex-lorem';
 // or
-import { words, characters, paragraphs } from 'dev-lorem';
+import { words, characters, paragraphs } from 'flex-lorem';
 
 console.log(words(8));
 console.log(characters(100));
@@ -117,7 +117,7 @@ lorem.l(5);         // same as lorem.list(5)
 ### React Components
 
 ```jsx
-import { words, paragraphs } from 'dev-lorem';
+import { words, paragraphs } from 'flex-lorem';
 
 function BlogPost() {
   return (
@@ -132,7 +132,7 @@ function BlogPost() {
 ### Testing
 
 ```javascript
-const lorem = require('dev-lorem');
+const lorem = require('flex-lorem');
 
 // Generate test data
 const testUser = {

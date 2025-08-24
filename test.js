@@ -18,7 +18,7 @@ function assert(condition, message) {
   }
 }
 
-console.log('Running tests for dev-lorem...\n');
+console.log('Running tests for flex-lorem...\n');
 
 // Test words function
 test('words() generates default 10 words', () => {
@@ -37,14 +37,23 @@ test('words(5) generates 5 words', () => {
 
 test('words(3, false) does not start with Lorem ipsum', () => {
   const result = lorem.words(3, false);
-  assert(!result.startsWith('Lorem ipsum'), 'Should not start with "Lorem ipsum"');
-  assert(result.charAt(0) === result.charAt(0).toUpperCase(), 'Should start with capital letter');
+  assert(
+    !result.startsWith('Lorem ipsum'),
+    'Should not start with "Lorem ipsum"'
+  );
+  assert(
+    result.charAt(0) === result.charAt(0).toUpperCase(),
+    'Should start with capital letter'
+  );
 });
 
 // Test characters function
 test('characters(50) generates approximately 50 characters', () => {
   const result = lorem.characters(50);
-  assert(result.length <= 60 && result.length >= 40, `Expected ~50 characters, got ${result.length}`);
+  assert(
+    result.length <= 60 && result.length >= 40,
+    `Expected ~50 characters, got ${result.length}`
+  );
 });
 
 test('characters() throws error for invalid input', () => {
@@ -52,7 +61,10 @@ test('characters() throws error for invalid input', () => {
     lorem.characters('invalid');
     assert(false, 'Should throw error for invalid input');
   } catch (error) {
-    assert(error.message.includes('Character count must be a positive number'), 'Correct error message');
+    assert(
+      error.message.includes('Character count must be a positive number'),
+      'Correct error message'
+    );
   }
 });
 
@@ -73,7 +85,10 @@ test('paragraphs(3) generates 3 paragraphs', () => {
 test('sentence() generates a sentence', () => {
   const result = lorem.sentence();
   assert(result.endsWith('.'), 'Should end with a period');
-  assert(result.charAt(0) === result.charAt(0).toUpperCase(), 'Should start with capital letter');
+  assert(
+    result.charAt(0) === result.charAt(0).toUpperCase(),
+    'Should start with capital letter'
+  );
 });
 
 test('sentence(8) generates sentence with 8 words', () => {
@@ -111,7 +126,7 @@ test('Short aliases work correctly', () => {
   assert(typeof lorem.p === 'function', 'p alias should exist');
   assert(typeof lorem.s === 'function', 's alias should exist');
   assert(typeof lorem.l === 'function', 'l alias should exist');
-  
+
   const wordsResult = lorem.w(5);
   assert(wordsResult.split(' ').length === 5, 'w alias should work like words');
 });
