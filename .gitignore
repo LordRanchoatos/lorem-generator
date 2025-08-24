@@ -1,4 +1,7 @@
 node_modules/
+
 *.log
-.env
+
 .DS_Store
+
+config.bat
